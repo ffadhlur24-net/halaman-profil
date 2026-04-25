@@ -146,6 +146,7 @@ header{
   -webkit-text-stroke: white 1px;
   padding: 8px;
   border-radius: 20%;
+  transition: .3s ease;
 }
 .sosial a:nth-child(1){
   background: blue;
@@ -161,6 +162,9 @@ header{
   background: gray;
   box-shadow: 0 4px 10px 2px rgba(87, 62, 62, 0.4);
 
+}
+.sosial a:hover{
+  transform: translateY(-5px);
 }
 /* Footer */
 .footer-content{
