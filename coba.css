@@ -9,12 +9,7 @@
 }
 /* Body */
 body{
-  background-image: url(uinws.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   font-family: 'Poppins', sans-serif; 
-  color: black;
   max-width: 1440px;
 }
 /* Header */
@@ -27,6 +22,55 @@ header{
   -webkit-text-fill-color: transparent;
   padding: 20px 0;
   font-size: 28px;
+}
+.main-section{
+  background-image: url(uinws.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: black;
+  padding-bottom: 100px;
+}
+.main-section::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 250%;
+  height: 100px;
+  background:  linear-gradient(
+    to bottom,
+    rgba(0,0,0,0) 0%,
+    rgba(52,152,219,0.9) 20%,
+    #3498db 100%
+  );
+}
+
+
+/* Dark mode */
+.main-section.dark{
+  background-image: url(darkuinws.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: black;
+  padding-bottom: 100px;
+}
+.main-section.dark::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 250%;
+  height: 100px;
+  background:  linear-gradient(
+    to bottom,
+    rgba(0,0,0,0) 0%,
+    rgba(18, 18, 19, 0.9) 20%,
+    #000000 100%
+  );
 }
 /* Container */
 .container{
@@ -128,7 +172,7 @@ header{
   margin: 30px 0;
 }
 .tentang p{
-  font-size: 16px;
+  font-size: 14px;
   text-align: justify;
   line-height: 1.2;
   margin: 0 50px 30px;
@@ -166,6 +210,89 @@ header{
 .sosial a:hover{
   transform: translateY(-5px);
 }
+
+/* pesan */
+.pesan-section{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #3498db;
+  margin-top: -50px;
+  position: relative;
+  z-index: 2;
+}
+/* dark mode */
+.pesan-section.dark{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #101213;
+  margin-top: -50px;
+  position: relative;
+  z-index: 2;
+}
+
+
+.pesan-section h1{
+  margin-bottom: 20px;
+}
+.pesan-content{
+  background: rgb(245, 245, 245, .4);
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 50px;
+}
+.kotak-2{
+  display: flex;
+  gap: 10px;
+}
+.kotak-2 h6{
+  text-align: center;
+}
+.pesan-grup input{
+  width: 300px;
+  height: 50px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.kotak-1{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.kotak-1 textarea{
+  border-radius: 8px;
+  resize: none;
+  font-size: 20px;
+}
+.kotak-1 button{
+  align-self: center;
+  width: 150px;
+  height: 30px;
+  background-color: #12a305;
+  border-radius: 8px;
+  font-weight: 700;
+}
+.kotak-1 button.sukses {
+  background: darkorange;
+}
+
+
+/* TOmbol ganti */
+.tombol-tema{
+  position: fixed;
+  right: 40px;
+  top: 50px;
+  padding: 15px;
+  color: yellow;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 100;
+}
+
 /* Footer */
 .footer-content{
   padding: 0 20px 10px;
@@ -185,6 +312,8 @@ header{
   font-size: 20px;
   color: white;
 }
+
+
 
 @media (max-width: 1024px){
   .profil img{
@@ -286,6 +415,18 @@ header{
   }
   .footer-content{
     grid-template-columns: 1fr;
+  }
+
+
+  .kotak-2{
+  display: flex;
+  flex-direction: column;
+  }
+
+  .pesan-grup input{
+  width: 300px;
+  height: 30px;
+  border-radius: 8px;
   }
   
 }
