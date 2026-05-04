@@ -8,17 +8,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Halaman Profil Saya</h1>
-  </header>
-  <div class="container">
-    <div class="left">
-      <div class="profil">
-      <div class="img-card">
-         <img src="profil-diri.jpeg" alt="Profil saya" width="350px" height="350px">
-      </div>
-      <h2>Fadhlurrohman</h2>
-      <h4>Teknologi Informasi</h4>
+  <section class="main-section" id="section">
+    <header>
+      <h1>Halaman Profil Saya</h1>
+    </header>
+    <div class="container">
+      <div class="left">
+        <div class="profil">
+        <div class="img-card">
+           <img src="profil-diri.jpeg" alt="Profil saya" width="350px" height="350px">
+        </div>
+        <h2><span class="typing"></span></h2>
+        <h4>Teknologi Informasi</h4>
     </div>
     <div class="hobi">
       <h3>Hobi Saya</h3>
@@ -49,12 +50,42 @@
       </p>
     </div>
     <div class="sosial">
-        <a href="#"><i class="fa-brands fa-square-linkedin"></i></a>
-        <a href="https://www.instagram.com/w_xy24/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://github.com/ffadhlur24-net" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-square-linkedin"></i></a>
+          <a href="https://www.instagram.com/w_xy24/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/ffadhlur24-net" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+      </div>
     </div>
+  </section>
+  <section class="pesan-section" id="pesan">
+    <header>
+        <h1>Kirim pesan</h1>
+    </header>
+    <form class="pesan-content" id="form">
+      <div class="kotak-2">
+        <div class="pesan-item">
+          <h6>Nama</h6>
+          <div class="pesan-grup">
+            <input id="nama" type="text" class="pesan-control" placeholder="  Tulsi nama...">
+          </div>
+        </div>
+        <div class="pesan-item">
+          <h6>Email</h6>
+          <div class="pesan-grup">
+            <input id="email" type="email" class="pesan-control" placeholder="  contoh@gmail.com...">
+          </div>
+        </div>
+      </div>
+      <div class="kotak-1">
+        <textarea id="pesanText" rows="10" placeholder="   tulis pesan..."></textarea>
+        <button id="btn" class="btn-pesan" type="submit">SUMBIT</button>
+      </div>
+
+    </form>
+  </section>
+    <div class="tombol-tema">
+        <i class="fas"></i>
     </div>
-  </div>
   <footer>
     <div class="footer-content">
       <div class="left-f">
@@ -71,5 +102,7 @@
     </div>
       </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="main.js"></script>
 </body>
 </html>
